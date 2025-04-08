@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from "../assets/gofood.mp4";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -10,6 +11,9 @@ export default function Navbar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <Link className="navbar-brand mb-0 pb-0" to="/">
+                            <video src={logo} height={60} autoPlay loop muted />
+                        </Link>
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
